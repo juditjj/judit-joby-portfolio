@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J. | Judit Joby Joseph</title>
+
+    <!-- SEO TITLE (keeps J. branding but adds real name for Google) -->
+    <title>J. (Judit Joby Joseph) | Software Developer Portfolio</title>
+
+    <!-- SEO META TAGS -->
+    <meta name="description"
+        content="J. (Judit Joby Joseph) is a software developer specializing in Android (Java), Python, AI tools, and cybersecurity projects. Explore projects, certifications, and skills." />
+
+    <meta name="keywords"
+        content="Judit Joby, Judit Joby Joseph, J portfolio, software developer, Android developer, Python developer, AI projects, cybersecurity, student developer portfolio" />
+
+    <meta name="author" content="Judit Joby Joseph" />
+
+    <!-- Open Graph (for WhatsApp / LinkedIn / Instagram previews) -->
+    <meta property="og:title" content="J. | Judit Joby Joseph Portfolio" />
+    <meta property="og:description"
+        content="Software Developer portfolio showcasing Android, Python, AI, and cybersecurity projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://judit-joby-portfolio.vercel.app" />
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,20 +45,22 @@
             }
         }
     </script>
+
+    <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         body {
             background-color: #230a0d;
-            /* Slightly lighter deep red */
             color: #f2e6d9;
             overflow-x: hidden;
         }
 
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -56,7 +78,6 @@
             background: #5c1e1e;
         }
 
-        /* Form Status */
         .form-status {
             margin-top: 1rem;
             font-size: 0.85rem;
@@ -80,7 +101,6 @@
             border: 1px solid rgba(255, 42, 64, 0.2);
         }
 
-        /* Nav Active state */
         .nav-link {
             color: #f2e6d9;
             opacity: 0.6;
@@ -98,7 +118,6 @@
             font-weight: 600;
         }
 
-        /* Animations */
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -128,20 +147,6 @@
             animation-delay: 300ms;
         }
 
-        @keyframes marquee {
-            0% {
-                transform: translateX(0%);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-marquee {
-            animation: marquee 30s linear infinite;
-        }
-
         @keyframes float {
             0% {
                 transform: translateY(0px);
@@ -158,27 +163,6 @@
 
         .animate-float {
             animation: float 6s ease-in-out infinite;
-        }
-
-        /* Card Hover Effects */
-        .bg-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        }
-
-        .bg-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-        }
-
-        /* Smaller Certificate Cards */
-        section a.group.rounded-xl {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        }
-
-        section a.group.rounded-xl:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
         }
     </style>
 </head>
